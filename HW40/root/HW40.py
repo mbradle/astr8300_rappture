@@ -28,7 +28,7 @@ def main():
 
     my_str_base = 'int_0^root (' + formula + ') dx - ' + str(a)
 
-    # Get compute root of \int_0^x f(x') dx' - a
+    # Compute root of \int_0^x f(x') dx' - a
 
     root = optimize.brentq(
                calc, xmin, xmax, args=(a, formula)
