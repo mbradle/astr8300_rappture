@@ -4,11 +4,11 @@ import numpy as np
 from scipy.integrate import odeint
 from scipy import optimize
 
-def f(y, x, b, formula):
+def f(y, x, formula):
     return eval(formula)
 
 def calc(x, a, formula):
-    y = odeint(f, -a, [0,x], args=(1, formula))
+    y = odeint(f, -a, [0,x], args=(formula,))
     return y[1]  # y[0] is int f(x) from 0 to 0
 
 def main():
