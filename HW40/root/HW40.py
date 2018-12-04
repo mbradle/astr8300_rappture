@@ -30,9 +30,7 @@ def main():
 
     # Compute root of \int_0^x f(x') dx' - a
 
-    root = optimize.brentq(
-               calc, xmin, xmax, args=(a, formula)
-           )
+    root = optimize.brentq(calc, xmin, xmax, args=(a, formula))
 
     my_str = '\nRoot of ' + my_str_base +  ' in [' + str(xmin) + \
             ', ' + str(xmax) + '] is ' + str(root)
