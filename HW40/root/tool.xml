@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<run>
+    <tool>
+        <title>Integrating and Root-finding Calculator</title>
+        <about>Press Simulate to view results.</about>
+        <command>python @tool/HW40.py @driver</command>
+    </tool>
+    <input>
+        <string id="formula">
+            <about>
+                <label>f(x)</label>
+                <hints>Example: 2*x + 1</hints>
+            </about>
+            <size>30x5</size>
+	    <default>2*x+1</default>
+        </string>
+        <number id="min">
+            <about>
+		<label>Min. x</label>
+		<description>This is the minimum x guess.</description>
+	    </about>
+            <default>-1</default>
+        </number>
+        <number id="max">
+	    <about>
+	  	<label>Max. x</label>
+		<description>This is the maximum x guess</description>
+	    </about>
+            <default>10</default>
+        </number>
+        <number id="a">
+            <about>
+	        <label>a</label>
+		<description>The addend to the root equation</description>
+	    </about>
+            <default>10</default>
+        </number>
+    </input>
+</run>
